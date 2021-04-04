@@ -9,6 +9,11 @@
             <div class="card-body">
                 <form method="post" action="{{ route('update')}}">
                     <div class="form-group">
+                        <label for="img">
+                           画像
+                        </label>
+                    </div>
+                    <div class="form-group">
                         <label for="name">
                             名前
                         </label>
