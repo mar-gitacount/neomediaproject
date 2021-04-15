@@ -81,12 +81,12 @@ class ArticleController extends Controller
          * articleshow.blade.phpを作る。
         */
         $article = Article::findOrFail($id);
-	$articleUserResult = $article->user_id;
+	    $articleUserResult = $article->user_id;
         $articleUser = User::find($articleUserResult);
         return view('article_display')->with('article', $article)->with( 'articleUser',$articleUser);
     }
 
-     public function article_update_page_show($id){
+    public function article_update_page_show($id){
         /** 
          *
          * 編集するためのページを表示、articleの値を呼び出してブレードファイルに吐き出すを呼び出す。 

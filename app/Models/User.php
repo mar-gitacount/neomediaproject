@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'user_prf'
     ];
 
     /**
@@ -54,7 +55,7 @@ class User extends Authenticatable
          * articleテーブルを新しい順で更新する。
          * 
          * 
-           */
+        */
         return $this->hasMany('App\Models\Article')->latest();
     }
 

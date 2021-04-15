@@ -83,7 +83,6 @@ class UserController extends Controller
         //
 	$user_form = $request->all();
         $user = $request->user();
-        //dd($user);
         unset($user_form['_token']);
         $user->fill($user_form)->save();
         return redirect('/home');
