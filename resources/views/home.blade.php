@@ -18,7 +18,7 @@
                 <div class="card-body">{{ Auth::user()->id }}</div>
 		        <?php
                    $iptest = $_SERVER['REMOTE_ADDR'];
-		           echo "あなたのIPアドレスは". $iptest . "ですよ!";
+		           echo "あなたのIPアドレスは". $iptest . "ですよ。";
                 ?>
                 <!-- ここにユーザーの記事一覧を表示する。 -->
                 <table class="table table-striped">
